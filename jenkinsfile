@@ -1,14 +1,15 @@
 pipeline {
 	agent any 
 
-
-	stage {
-		steps {
+	stages {
+		stage('Build') {
+			steps {
 				ls
 				zip allfiles.zip *
 				ls
 				rm file4 file3
 				ls
-		}
+			}
+		} 
 	}
 }
