@@ -8,7 +8,7 @@ pipeline {
 				ls
 				zip allfiles.zip *
 				ls
-				rm file1 file2
+				rm file4 file3
 				ls
 			}
 		}
