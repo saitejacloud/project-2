@@ -1,0 +1,16 @@
+pipeline {
+	agent any 
+
+
+	stage {
+		steps('Build') {
+			steps {
+				ls
+				zip allfiles.zip *
+				ls
+				rm file1 file2
+				ls
+			}
+		}
+	}
+}
