@@ -10,5 +10,5 @@ pipeline {
 				rm file4 file3
 				ls
 		}
-	}}
+	}
 }
