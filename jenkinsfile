@@ -3,14 +3,12 @@ pipeline {
 
 
 	stage {
-		steps('Build') {
-			steps {
+		steps {
 				ls
 				zip allfiles.zip *
 				ls
 				rm file4 file3
 				ls
-			}
 		}
-	}
+	}}
 }
